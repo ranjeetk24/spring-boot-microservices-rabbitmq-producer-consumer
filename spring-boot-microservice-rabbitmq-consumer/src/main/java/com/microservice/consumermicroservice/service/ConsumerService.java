@@ -14,7 +14,7 @@ import com.microservice.consumermicroservice.facade.ConsumerRepository;
 
 @Service
 public class ConsumerService {
-	private static final Logger log = LogManager.getLogger(ConsumerService.class);
+	private static final Logger LOGGER = LogManager.getLogger(ConsumerService.class);
 	public static final String PRODUCT_QUEUE = "product-queue";
 	private ConsumerRepository productRepository;
 
@@ -24,11 +24,11 @@ public class ConsumerService {
 
 	@RabbitListener(queues = PRODUCT_QUEUE)
 	public void receiveMessageAndCreateProduct(Product product) {
-		log.info("Message received :" + product.getProductName());		
+		LOGGER.info("Message received :" + product.getProductName());		
 		product.setMessageReceived(true);	
 		productRepository.save(product);
 
-		log.info("Message processed...and saved in database");
+		LOGGER.info("Message processed...and saved in database");
 	}
 
 
