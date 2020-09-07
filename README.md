@@ -14,7 +14,7 @@ POST
 Body
 
 {
-        "id": 1,
+       
         "productName": "LG Television",
         "productDescription": "55 inch 4K smart TV",
         "price": "62000"
@@ -24,7 +24,7 @@ If running along with eureka server and zuul api gateway
 http://localhost:9090/api/producer-service/product/
 POST
 {
-        "id": 1,
+       
         "productName": "LG Television",
         "productDescription": "55 inch 4K smart TV",
         "price": "62000"

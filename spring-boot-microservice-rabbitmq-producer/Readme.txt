@@ -13,7 +13,7 @@ POST
 Body
 
 {
-        "id": 1,
+       
         "productName": "LG Television",
         "productDescription": "55 inch 4K smart TV",
         "price": "62000"
@@ -24,7 +24,7 @@ http://localhost:9090/api/producer-service/product/
 POST
 Body
 {
-        "id": 1,
+        
         "productName": "LG Television",
         "productDescription": "55 inch 4K smart TV",
         "price": "62000"
